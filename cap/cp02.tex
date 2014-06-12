@@ -1,6 +1,6 @@
-\chapter*{UNIX El sistema operativo revolucionario}
+\chapter*{UNIX EL SISTEMA OPERATIVO REVOLUCIONARIO}
 
-\section*{UNIX ¿De dónde surgió?}
+\section*{UNIX ¿DE DÓNDE SURGIÓ?}
 A fines de 1960, el Instituto Tecnológico de Massachusetts, unos  de los más prestigiosos actualmente, los Laboratorios Bell de AT\&T y General Electric trabajaban en un sistema 
 operativo experimental llamado Multics (Multiplexed Information and Computing System), desarrollado para ejecutarse en una computadora central (mainframe) modelo GE-645. El 
 objetivo del proyecto era desarrollar un gran sistema operativo interactivo que contase con muchas innovaciones, entre ellas mejoras en las políticas de seguridad.
@@ -60,7 +60,7 @@ intelectual sobre el software.SCO continúa la comercialización de System V en 
 nuevo el nombre de UnixWare.
 
 
-\section*{Los "Hackers"}
+\section*{LOS "HACKERS"}
 Thompson y Ritchie fueron "hackers" en su época, con esa palabra se les refería, juntos combinaban la creatividad poco común, la fuerza de la inteligencia y el trabajo de 
 la medianoche para resolver los problemas de software que otros no sabían que existían, el enfoque y el código que ellos escribieron atrajeron gran cantidad de 
 programadores provenientes de universidades y más tarde las  compañías, ellos lograron esto sin la necesidad de tener un gran presupuesto como IBM u otras empresas 
@@ -114,29 +114,260 @@ UNIX es un Sistema Operativo de propósito general con las siguientes caracterí
 	\item Control de memoria.
 	\item Características semejantes a un lenguaje de programación de alto nivel.
 	\item Shell scripts.
-
 \end{itemize}
 
+Además permite configurar diferentes entornos de trabajo. El sistema operativo UNIX tiene dos componentes fundamentales:
+\begin{description}
+	\item[El Kernel:] Es aquel que constituye el núcleo del sistema operativo. Actúa como interfase con el hardware del sistema, este también se encarga de realizar las funciones 
+							de más bajo nivel. El (90\%) está escrito fundamentalmente en lenguaje C el resto en lenguaje ensamblador.
+	\item[El Shell:] Es la interfaz del sistema operativo con sus usuarios. Este actúa como intérprete de comandos, tiene características semejantes a un lenguaje de programación 
+						  de alto nivel.
+\end{description}  
 
 \section*{NO TODO PUEDE SER BUENO}
 Sin embargo como todo software presenta altibajos tanto en funcionalidades como en desarrollo, calidad o seguridad.
                                            
-Como es el reciente caso de la llamada operación "Windigo" una campaña cibercriminal que fue dada al descubierto por el laboratorio de Eset junto con CERT-Bund y otros 
-organismos que según estos Windigo logró tomar el control de cerca de 25.000 servidores Unix y Linux en todo el mundo infectando a más 500.000. Windigo una vez a 
-comprometido al servidor los usa para tomar credenciales SSH, para redirigir a  los visitantes de los sitios web allí alojados a contenido malicioso  y para enviar spam que 
-llegó a un promedio de 35 millones de mensajes diarios sin embargo no se explota alguna vulnerabilidad del sistema operativo pero esto es algo a tener muy en cuenta ya que 
-se calcula que el 60\% de internet se encuentra alojado en servidores Unix y Linux.
+Como se dice en un reciente estudio desarrollado por el Laboratorio de Investigación de ESET, junto con CERT-Bund (Swedish National Infrastructure for   Computing) y otros 
+organismos anunciaron que se está desarrollando una campaña cibernética criminal denominada Windigo, que consiste en  la inyección de software malicioso, a lo cual se comprometen 
+miles de servidores de Linux y Unix. Una vez infectado el servidor, este software malicioso roba las credenciales de las víctimas, no  solo roba las credenciales también redirige  
+el tráfico de Internet hacia contenidos maliciosos o el envío de millones de mensajes de spam al día.
 
-\section*{Unix en la Actualidad}
-Aunque Unix no pudo mantener el boom que genero en su momento Unix se mantiene a la vanguardia ya que se continúan lanzando productos para este sistema  como lo es PROTECT-
-UX lanzado recientemente por  Computer Security Products Protect-UX es una solución que mejora considerablemente la seguridad y reduce la carga administrativa en los 
-sistemas Linux y Unix también ofreciendo soluciones a problemas de archivos este tipo de productos son enfocados en la actualidad y futuro de Unix el cual apunta es a ser  
-usado en servidores web de gran tráfico.
+La compañía ESET de seguridad informática dijo que “Windigo, mientras está   pasando desapercibido por una gran  parte de los investigadores en seguridad, este lleva operando más 
+de dos años y medio”. Pierre-Marc Bureau, director de los programas de seguridad de ESET, dijo que “Windigo tiene actualmente unos 10.000 servidores bajo su control”. También 
+afirmó que “Este número ya es significativo si se tiene en cuenta que cada uno de estos sistemas tiene acceso a un ancho de banda considerable, una gran capacidad de 
+almacenamiento, potencia de cálculo y memoria”. El equipo de investigación de seguridad de ESET ha trabajado en colaboración con la Infraestructura Nacional Sueca de Computación 
+y otros organismos, señalando que una vez infectados los sistemas de las víctimas, se utilizan para redirigir el tráfico de Internet  hacia contenidos maliciosos y el envío de 
+Spam.
+
+Como Linux  y Unix  tienen miles de servidores, es casi evidente que están en un peligro inminente, debido a que Windigo es vista como una operación a gran escala, por lo que el 
+daño que haría sería devastador.
+
+Windigo usa una puerta trasera de OpenSSH, e inserta un programa que cambia la dirección web y envía correo no deseado. Varios servidores ubicados en Estados Unidos, Alemania, 
+Francia y el Reino Unido se encuentran entre los equipos infectados por este  software  malicioso.
+
+
+\section*{¿QUÉ  ESTÁ PASANDO  CON UNIX?}
+Es  una de las tantas preguntas que   se hacen  los amantes de este sistema  operativo, como es posible  que  un sistema operativo  que  tuvo una gran influencia  en lo que  son 
+hoy en día los sistemas  operativos,  día a día  se  venga  abajo , qué  futuro le  espera  a unix, "¿es  un futuro incierto? el que le espera". 	
+es  una gran verdad que  mientras  Linux crece y se  afianza  en  el entorno de servidores corporativos, y  Windows   el sistema operativo con más  usuarios  refuerza  su  
+posicionamiento como plataforma para aplicaciones  críticas, Unix  se  va quedando  relegado segun lo  afirma la  IDC (consultoras IDC de España).                                       
+
+Cabe  aclarar que la mala situación por la que pasa Unix, se  debe en gran parte  por la  crisis  del punto com (.com), y  al crecimiento que  ha tenido   Linux  en el ámbito de 
+los servidores de entrada, "en el  año 2001  fue una temporada  critica para  Unix"  segun lo afirma  la consultora IDC,  en ese  año bajaron radicalmente las  ventas  e  
+ingresos   para  Unix, y  no obstante el crecimiento de  Linux  en el ámbito corporativo   que  cada día tenia mas  y mas acogida en el mercado, generando  una diferencia  cada 
+vez menor  entre Unix  y Linux, como una lo afirmo el director de análisis de IDC en España Jaime gracia "Linux le está  robando mercado a Unix. Al menos en la parte de 
+infraestructura de Internet. Además, las empresas cada vez más, perciben a Linux como un sistema muy robusto y con gran estabilidad".  	
+
+Como la tecnología  avanza cada día mas y mas, las necesidades surgen por montones, los sistemas operativos necesitan estar a la vanguardia, esto se ha vuelto en una presión  muy 
+grande para  Unix,Linuxy  Windows, que son los sistemas más utilizados  en la  actualidad.
+
+La presión a la  que están constantemente Unix, Linux y Windows  pueden perjudicarlos o favorecerles en su desarrollo como  sistema operativo, como lo señala  un  estudio 
+realizado por la consultora IDC, el cual analiza. 
+
+
+\section*{LA LUCHA POR LOS DERECHOS DE UNIX}
+The Open Group es un consorcio de la industria del software que brinda estándares abiertos y neutrales para el ámbito de la informática y que posee miembros tan importantes como 
+Fujitsu, Hitachi, HP, IBM, Departamento de Defensa de Estados Unidos, NASA entre otros   tuvo  una disputa legal con  Novell donde en 2009 donde perdió la propiedad de la Marca 
+Unix con Novell una multinacional estadounidense de software  quien es propietaria de lo que fueron los Bell Labs pero esto no acabaría allí  ya que en 2004 The scogroup una 
+compañía de americana de software conocida por brindar los servicios de  scoopenserver estableció una demanda reclamando la propiedad del código fuente de Unix, incluyendo 
+porciones de Linux. Luego de una larga pelea judicial se concluye que Novell es el propietario de los derechos de autor de Unix y que SCO  ha incumplido los acuerdos de 
+transferencia de activos por tanto SCO debía a Novell \$2.5 millones en regalías no pagadas cosa que llevó a esta compañía a la quiebra.
+
+Esto nos puede hacer una clara idea de lo influyente que es y de que el impacto de este sistema operativo que llevó a gigantes organizaciones a estar en grandes  disputas 
+jurídicas por poseer los derechos de esta. 
+ 
+\subsection*{LA BATALLA  ENTRE  MICROSOFT Y LINUX CONTINUA}
+Microsoft sigue  intentando  en superar  a linux  de diferentes  maneras, y ha llegado  a  tal punto  de  comprar la  licencia  de  Unix,  que  es  propiedad  de  la  compañía 
+SCO y  rival  de  su propio sistema  Windows, El movimiento tiene varias explicaciones. Una de ellas es práctica. Las grandes máquinas o servidores de muchas grandes empresas 
+funcionan, actualmente, con Unix, pero la mayor parte de ellas están migrando al sistema Linux, de código abierto ,es decir, que se puede estudiar y modificar libremente ,y 
+además es  más barato que Unix,  como Linux en su  código tiene una estructura muy parecida al de Unix, facilita el cambio  de  estas  empresas  a un sistema  libre  como lo  es  
+Linux.
+
+El interés  que tiene Microsoft  en comprar la licencia  de  Unix es debido a que  con el código de Unix en la mano, Microsoft pretende mejorar la compatibilidad de ambos 
+sistemas y convencer a los clientes de Unix de que migren a Windows en lugar de a Linux.
+Hay una segunda razón legal. SCO asegura que el corazón de Linux es suyo, ya que se basa en el código de Unix. Por eso, ha demandado a IBM en los tribunales estadounidenses, ya 
+que asegura,que  el desarrollo de Linux que ha hecho IBM viola su propiedad intelectual, al estar basado en Unix. El sector espera que, de prosperar, a esta demanda le sigan 
+otras contra el resto de las empresas que desarrollan Linux  como  HP .
+
+Se  dice  que  con  la compra del código, Microsoft trata de evitar problemas en los tribunales y, según sus competidores, alimentar la batalla legal contra Linux.
+
 
 \section*{EL LEGADO DE UNIX}
-Unix  a dejado una marca en lo referente a los sistemas operativos ya que ha dejado  muchos sistemas operativos basados en este los cuales son bastante conocidos y con 
-miles de usuarios y desarrollados varios campos del software y por diferentes compañías con distintos fines  podemos ver algunos ejemplos como lo son Linux, iOS, Solaris, 
-BSD,HP OSS, que fueron basados en Unix
+Hoy en día Unix es el nombre genérico que se le da a sistemas multiusuario y multitarea para esto existe Single Unix Specification (Especificación Única de Unix publicada por The 
+Open Group)   ya que Unix posee diferentes tipos de versiones e implementaciones tanto comerciales como libres Single Unix Specification es un conjunto de estándares que  
+establecen los requisitos para que un sistema pueda proclamarse Unix entre los certificados se encuentran:
+\begin{description}
+	\item[Las versiones comerciales como:]
+\end{description}
+
+\begin{description}
+	\item[AIX:]
+		Advanced Interactive eXecutive propiedad de IBM. AIX corre en los servidores IBM eServersp Series, utilizando procesadores de la familia IBM POWER de 32 y 64 bits.
+		AIX cuenta con Object Data Manager (una base de datos de información del sistema). La integración de AIX del "Logical Volume Management" (administrador de volumen lógico). 
+		su ultima version es AIX 7.1, lanzada en Marzo de 2012.
+	
+	\item[HP-UX:]
+		Desarrollada y mantenida por Hewlett-Packard desde 1983 posee un entorno de trabajo flexible, potente y estable, que una gran variedad de aplicaciones en las que se 	
+		encuentran simples editores de texto hasta complejos programas de diseño gráfico o cálculo científico, pasando por sistemas de control industrial que incluyen 
+		planificaciones de tiempo real.
+		
+		Actualmente se enfoca en la seguridad como lo es el sistema de detección de intrusos IDS/9000 para HP-UX 11.x corriendo sobre máquinas HP-9000.
+		
+	\item[Solaris:]
+		En 2009 Oracle compró Sun desde entonces este sistema se a especializado en soportar la tecnología ORACLE RAC (Real ApplicationCluster)  que permite la ejecución de una 		
+		aplicación distribuida en varios servidores últimamente se incorporó la tecnología  ZFS(Zetabyte File System) un sistema de archivos con almacenamiento periódico. 		
+		la ultima version es Solaris 11 publicado el 9 de noviembre de 2011.
+		
+	\item[Mac OS X:]
+		Se trata de un UNIX completo, aprobado por The Open Group(Conocidos por publicar la definición de Unix ). Su gran diferencia es que posee una interfaz gráfica propia  
+		llamada Aqua, principalmente desarrollada en Objective-C y no en c. este sistema a sido  comercializado y vendido por Apple Inc.Ha sido incluido en su gama de computadoras 
+		Macintosh desde el año de 2002.
+\end{description}
+
+\begin{description}
+	\item[Las versiones no comerciales como:]
+\end{description}
+
+\begin{description}
+	\item[FreeBSD,OpenBSD,NetBSD:]
+		Herederos del antiguo BSD 4.4  los tres bastantes similares pero cada uno especializado en algo en especial como seguridad multiplataforma y fácil uso.
+	
+	\item[Linux:]
+		Linux y Unix  se  suelen diferenciar en textos y cuando se habla de ellos pero en términos de habilidades Linux solo es una variante suplementaria de Unix el cual cuenta 
+		con diferentes tipos de distribuciones muy conocidas como Debian, Ubuntu, RedHat etc.  Solo con este este ejemplo podemos ver como este software a inspirado incluso 
+		software libre.
+\end{description}
+
+
+\section*{UNIX EN EL SÉPTIMO ARTE}
+Unix ha hecho apariciones en diferentes películas bastante conocidas y aunque no son apariciones directas son pequeñas escenas en las que se hace referencia a este sistema 
+operativo por lo que da a entender de que no es ningún product placement si no que han sido por el impacto que este sistema ha generado entre los casos con más impacto curiosos e 
+incluso graciosos encontramos:
+
+\subsection*{JURASSIC PARK}
+En esta famosa película de Steven el sistema de seguridad del parque se manejado con  un Macintosh Quadra 700 pero se usa una interfaz con la que se concluye que se usa Unix.
+
+\subsection*{BATMAN}
+Un famoso sitio web analizo también la 'Baticomputadora'  de las películas de los años 80 y 90.que si se tratara de un computador central es muy posible fuese un clon de UNIX 
+personalizado, explica que Batman utilizó la máquina T932 en 1995, basada en UNIX.
+
+\subsection*{CHEQUE EN BLANCO}
+El protagonista se hace pasar por asesor de un jefe multimillonario inventado al cual le pone el nombre de Macintosh. El nombre lo saca de su Macintosh Performa 600 pero le añade 
+una K para que no lo relacionen con Apple.
+
+\subsection*{DR. WHO}
+En esta reconocida serie la mayoría de computadores corren con Ubuntu y se puede identificar por la pantalla de arranque.
+
+\subsection*{ANTITRUST}
+En esta película también podemos ver:
+\begin{itemize}
+	\item A Scott McNeeley, CEO de Sun Microsystems de la época, también entregando un premio.
+	\item En una imagen en blanco y negro, aparece claramente un hacker usando un sombrero rojo tipo Fedora, en alusión a Red Hat.
+	\item Parte del código de bzip2, cuando muestran un "interesante código de compresión".
+	\item También se puede ver algo de código HTML, que fue tomado desde el mismo código desde el sitio Internet Movie Data Base (imdb).
+	\item Uso de comandos similares a Unix, en donde uno de ellos es "show -p 1984", en donde el numero del proceso es una alusión al libro de George Orwell: 1984.
+\end{itemize}
+
+Es bastante curioso como estos pequeños huevos de pascua han generado gran controversia y curiosidad en diferentes blogs en la web con esto se puede lograr dimensionar un poco el impacto de este SO ya que logro tener gran impacto incluso en el cine 
+
+
+\section*{UNIX  APLICACIÓN EN  LOS  VIDEOJUEGOS}
+Las personas  que dicen que  Unix no es  un sistema operativo  para  juegos, están un poco  equivocados, la famosa consola PS4  tiene en su carrazón un sistema basado en  Unix, 
+de la  rama de Berkeley, y basado en el  FreeBSD(FreeBSD 9). Esta información  parece de  otro  mundo, debido  a que  nadie  esperaba  que  una  consola  de  última generación  
+pueda  estar  basada  en  Unix , cuando el  mercado de videojuegos  para  Unix/Linux  es  prácticamente inexistente para  ciertas  personas.
+ 
+Por otra  parte  la decisión de diseño de la  PS4 en  Unix, no  debe  ser  tan sorpresiva  para  aquellas  personas  que  están  muy bien  informados  de lo que pasa  alrededor 
+de los sistemas  operativos, ya  que  Sony lleva ya algunas  iteraciones con sistemas Unix.
+ 
+La  famosa  PS3  es  una  consola  que  también  se  baso en el sistema  operativo  Unix, o más propiamente dicho  en  una  distribución  Linux llamada  Yellow Dog, que  a su vez 
+basada en una distribución famosa de la época en CentOS. La consola  contaba   con una  opción que le permitía directamente  ejecutar el sistema operativo Yellow  Dog.
+ 
+El sistema  operativo de  la consola  PS Vita  estaba  basada  en  FreeBSD, cuyo sistema tiene muchas soluciones compatibles con los  teléfonos  y las  tablets basados en 
+Android.
+ 
+Un dato importante  es  que  Sony no  fue la única  en  implementar  el sistema  operativo  Unix, Apple  también dio ese giro cuando cambio al MacOS X, creando  su versión del 
+sistema operativo sobre  la  base del sistema DARWIN( o Open Darwin) una versión especial  del FreeBSD 5.0  y sobre la cual  configuro  la  interfaz gráfica que hoy en día  se 
+asocia  con la  generación actual de las MacOS.
+
+Para  los que  no  sabían  que  es  FreeBSD, es  un sistema  operativo de  Unix de la  rama de Berkeley, una de las grandes  universidades que han investigado sobre Unix, el 
+sistema nación  un poco  después de  Linux   y  su enfoque  siempre  fue la estabilidad  y la seguridad, razón por la cual siempre fue  utilizado en servidores  Cliente / 
+Principal, esta fue  una  razón por la que  no fue  tan conocido como  Linux, pero  aun así  fue escogido  por  Sony  y Apple ya que  es  un sistema operativo que  brinda 
+robustez.
+
+
+\section*{¿UNIX ES  SEGURO?}
+Para  poder  hablar  de  la seguridad  en un sistema operativo, deben conocer  algunas cosas básicas  sobre la seguridad informática.
+
+\subsection*{¿QUÉ ES SEGURIDAD?}
+La seguridad  es una característica  de cualquier sistema (informático o no) que nos indica que ese sistema está  libre de todo peligro, daño o riesgo, y que es, en cierta manera 
+infalible. Pero a la hora de hablar de seguridad en SO o redes de computadores, se suele hablar de fiabilidad (probabilidad de que un sistema se comporte tal y como se espera de 
+él).
+
+En la seguridad  de  los  SO, nos centramos en tres aspectos:
+\begin{itemize}
+	\item La confidencialidad nos dice que los objetos de un sistema han  de ser accedidos solo por elementos autorizados para ello.
+	\item La integridad que los objetos solo pueden ser modificados por autorizados. 
+	\item La disponibilidad que dichos elementos deben poder ser accesibles por los autorizados, contrario a la negación de servicio.
+\end{itemize}
+
+\textbf{Amenazas a  la seguridad de nuestro sistema:} 
+
+\begin{itemize}
+	\item	Interrupción del  sistema, si se queda inútil o  no disponible.
+	\item Interceptación, es si un elemento no autorizado, consigue un acceso a un determinado objeto del sistema.
+	\item Modificación, si además de conseguir el acceso se consigue modificar el objeto.
+	\item Destrucción, es la modificación de un objeto que queda inutilizado.
+	\item Fabricación, si se trata de una modificación destinada a conseguir un objeto similar al atacado de forma que sea difícil distinguir entre el original y el fabricado.
+\end{itemize}
+
+\textbf{¿De qué nos protegemos?}
+
+\begin{itemize}
+	\item Personas como son el mismo usuario, o curiosos o crackers o piratas.
+	\item Amenazas lógicas, como software incorrecto, puertas traseras, bombas lógicas, canales cubiertos u ocultos, gusanos, caballos de Troya, conejos o bacterias, virus, 		
+			applets hostiles.
+	\item Catástrofes naturales o artificiales. 
+\end{itemize}
+
+\textbf{¿Cómo protegernos?}
+La seguridad se abarca desde tres puntos:
+\begin{itemize}
+	\item Prevención, utilizando mecanismos de seguridad como son autenticación e identificación, control de acceso, separación por niveles a proteger y seguridad en las 
+			comunicaciones.
+	\item Detección, programas de auditoría.
+	\item Recuperación, copias de seguridad.
+\end{itemize}
+
+\subsection*{LA SEGURIDAD  EN  UNIX}
+Dentro  de  toda  la gran familia de Unix  hay  una  serie de sistemas denominados "Unix Seguros"  o "Unix Fiables" (Trusted Unix), son sistemas  que  tiene  un excelente sistema 
+de control, evaluados  por la National Security Agency (NSA) estadounidense y clasificados en niveles seguros (B o A). entre estos sistemas  de  "Unix  Seguros" podemos  
+encontrar  a  AT\&T System V/MLS  y  OSF/1 (B1), Trusted Xenix (B2) y  XTS-300 STOP 4.1 (B3, considerados como unos de los  sistemas  más  seguros  del  mundo segun  la  NSA).
+ 
+La gran mayoría de los sistemas operativos de  Unix  como Solaris AIX están clasificados  como (C2), y algunos otros, como  Linux  se consideran sistemas  (C2 de facto: al  no 
+tener  una empresa que pague el proceso de evaluación de la NSA, no se encuentran catalogados), aunque  puedan implementar todos  los mecanismos  de un sistema C2.
+
+
+\section*{UNIX EN DISPOSITIVOS MÓVILES}
+En el 2012 se reportaron 839.705 usuarios de teléfonos inteligentes (Smartphone), un 60\% más que lo del 2011, cuando llegó a 522.640 usuarios, según los últimos datos de la 
+encuesta de Tecnologías de la Información y la Comunicación (TIC) del Instituto Nacional de Estadística y Censos (INEC).  Con esta cifra se puede concluir que el Smartphone es un 
+dispositivo que hace parte de la vida cotidiana de una gran parte de la sociedad y que esta parte va en aumento.
+
+Como sabemos estos dispositivos requieren de un sistema operativo que  administre de este, la tecnología desarrollo e investigación sobre estos a crecido exponencialmente creando 
+gran competencia entre los fabricantes aunque cada sistema operativo móvil posee características diferentes prácticamente todos los sistemas operativos actuales se basan o 
+derivan de sistemas Unix , ya que la gran mayoría de estos están basados en  modelo de capas que con lleva a una implementación de conceptos Unix.
+
+En si podemos concluir que Unix no está implementado ni destinado totalmente a dispositivos móviles pero los sistemas operativos de que utilizan los móviles poseen algo 
+relacionado con Unix y podemos decir que hay algo de Unix en la gran mayoría de estos dispositivos que cada día se hacen mas comunes y necesarios para el diario vivir
+Unix como fuente de trabajo.
+
+Las implementaciones de Unix en servidores requieren de manteniendo adaptación y un buen uso como todo software y esto es algo que no cualquier persona puede realizar por ello 
+para que en un servidor de este tipo tenga un buen rendimiento es conveniente que sea administrado por alguien que conozca pueda identificar una falencia fácilmente y pueda 
+optimizar el uso lo que con lleva a que empresas requieran  empleados con estas capacidades especificas generando una buena demanda por este tipo de personal el cual es bien 
+remunerado a este cargo se le ha dado el nombre de ingeniero Unix y para el cual es fácil encontrar ofertas de trabajo tanto nacionales como internacionales este es un claro 
+ejemplo del enorme impacto en la sociedad de este SO.
+
+
+
 
 
  
